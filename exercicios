@@ -1,4 +1,4 @@
-void main() {
+1- void main() {
   String nome = "Lucas";
   int idade = 17;
   double altura = 1.75;
@@ -12,7 +12,7 @@ void main() {
 }
 
 
-void main() {
+2- void main() {
   int a = 17;
   int b = 5;
 
@@ -27,7 +27,7 @@ void main() {
 
 
 
-void main() {
+3- void main() {
   double nota1 = 7.5;
   double nota2 = 8.0;
   double nota3 = 6.2;
@@ -38,7 +38,7 @@ void main() {
 }
 
 
-void main() {
+4- void main() {
   int total = 200;
 
   int horas = total ~/ 60;
@@ -46,6 +46,279 @@ void main() {
 
   print("$horas h e $minutos min");
 }
+
+5- void main() {
+  int a = 5;
+  int b = 9;
+
+  print("Antes: a = $a e b = $b");
+
+  int auxiliar = a;
+  a = b;
+  b = auxiliar;
+
+  print("Depois: a = $a e b = $b");
+}
+
+
+
+
+
+6- void main() {
+  int numero = 17;
+
+  if (numero % 2 == 0) {
+    print("Par");
+  } else {
+    print("Ímpar");
+  }
+}
+
+
+7- void main() {
+  int numero = -5;
+
+  if (numero > 0) {
+    print("Positivo");
+  } else if (numero < 0) {
+    print("Negativo");
+  } else {
+    print("Zero");
+  }
+}
+
+
+8- void main() {
+  int idade = 16;
+
+  if (idade <= 11) {
+    print("Criança");
+  } else if (idade <= 17) {
+    print("Adolescente");
+  } else if (idade <= 59) {
+    print("Adulto");
+  } else {
+    print("Idoso");
+  }
+}
+
+
+9- void main() {
+  double nota1 = 7.0;
+  double nota2 = 8.0;
+
+  double media = (nota1 + nota2) / 2;
+
+  print("Média: $media");
+
+  if (media >= 7) {
+    print("Aprovado");
+  } else if (media >= 5) {
+    print("Recuperação");
+  } else {
+    print("Reprovado");
+  }
+}
+
+
+10- void main() {
+  int n1 = 4;
+  int n2 = 9;
+  int n3 = 9;
+
+  int maior = n1;
+
+  if (n2 > maior) {
+    maior = n2;
+  }
+
+  if (n3 > maior) {
+    maior = n3;
+  }
+
+  print("Maior número: $maior");
+}
+
+
+11- void main() {
+  int idade = 20;
+  bool estudante = true;
+
+  double ingresso = 40.00;
+  double valor;
+
+  if (idade < 12 || idade >= 60 || estudante) {
+    valor = ingresso / 2;
+  } else {
+    valor = ingresso;
+  }
+
+  print("Valor a pagar: R\$ ${valor.toStringAsFixed(2)}");
+}
+
+
+12- void main() {
+  int ano = 2024;
+
+  if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
+    print("$ano é bissexto");
+  } else {
+    print("$ano não é bissexto");
+  }
+}
+
+
+13- void main() {
+  double a = 3;
+  double b = 3;
+  double c = 3;
+
+
+  if (a < b + c && b < a + c && c < a + b) {
+    if (a == b && b == c) {
+      print("Triângulo equilátero");
+    } else if (a == b || a == c || b == c) {
+      print("Triângulo isósceles");
+    } else {
+      print("Triângulo escaleno");
+    }
+  } else {
+    print("Não forma um triângulo");
+  }
+}
+
+
+14- void main() {
+  double n1 = 10;
+  double n2 = 5;
+  String operador = "+";
+
+
+  if (operador == "+") {
+    print("Resultado: ${n1 + n2}");
+  } else if (operador == "-") {
+    print("Resultado: ${n1 - n2}");
+  } else if (operador == "*") {
+    print("Resultado: ${n1 * n2}");
+  } else if (operador == "/") {
+    if (n2 != 0) {
+      print("Resultado: ${n1 / n2}");
+    } else {
+      print("Não é possível dividir por zero");
+    }
+  } else {
+    print("Operador inválido");
+  }
+}
+
+15- void main() {
+  int valor = 380;
+
+
+  if (valor <= 0 || valor % 10 != 0) {
+    print("Saque não é possível");
+  } else {
+    int notas100 = valor ~/ 100;
+    valor = valor % 100;
+
+
+    int notas50 = valor ~/ 50;
+    valor = valor % 50;
+
+
+    int notas20 = valor ~/ 20;
+    valor = valor % 20;
+
+
+    int notas10 = valor ~/ 10;
+
+
+    print("Notas de 100: $notas100");
+    print("Notas de 50: $notas50");
+    print("Notas de 20: $notas20");
+    print("Notas de 10: $notas10");
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=
+
+
+
+
+
+
 
 
 
